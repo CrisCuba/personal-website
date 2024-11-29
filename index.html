@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Gonzalez - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="main-nav">
+                <div class="logo">
+                    <span class="logo-bracket">{</span>
+                    <span class="logo-text">CG</span>
+                    <span class="logo-bracket">}</span>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </nav>
+        </header>
+
+        <button id="scroll-btn" class="scroll-btn">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <img src="src/assets/MyEmoji_20241128_105248_17328019683500.png" alt="Cristian Gonzalez" class="hero-profile-image">
+                    <h1>Hello, <span class="hero-name">I'm Cristian Gonzalez</span></h1>
+                    <div class="hero-description">
+                        <p>Frontend Software Developer with over 15 years of experience in Telecom, specializing in web application development and agile methodologies. My journey from customer service to technical leadership has given me a unique perspective on creating user-centric solutions.</p>
+                        <span class="typed-text"></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/cristian-gonzalez-cuba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/CrisCuba" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="src/assets/CV Cristian Ariel Gonzalez Cuba.pdf" class="download-cv" download>
+                            <i class="fa-solid fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <div class="section-header">
+                    <h2><i class="fas fa-laptop-code"></i> Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="skills">
+                            <ul class="skills-grid">
+                                <li class="skill-item">
+                                    <i class="fab fa-react"></i>
+                                </li>
+                                <li class="skill-item">
+                                    <i class="fab fa-js"></i>
+                                </li>
+                                <li class="skill-item">
+                                    <i class="fab fa-node-js"></i>
+                                </li>
+                                <li class="skill-item">
+                                    <i class="devicon-typescript-plain"></i>
+                                </li>
+                                <li class="skill-item">
+                                    <i class="fab fa-html5"></i>
+                                </li>
+                                <li class="skill-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                </li>
+                                <li class="skill-item">
+                                    <i class="fab fa-aws"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects">
+                <div class="section-header">
+                    <h2><i class="fas fa-code"></i> Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>SVGL - SVG Logo Library</h3>
+                                <div class="project-tech-badges">
+                                    <span class="tech-badge nextjs">
+                                        <i class="fab fa-react"></i> Next.js
+                                    </span>
+                                    <span class="tech-badge tailwind">
+                                        <i class="fab fa-css3"></i> Tailwind CSS
+                                    </span>
+                                </div>
+                            </div>
+                            <p>A comprehensive library of SVG logos from popular brands. Built with modern web technologies and receiving over 10k monthly visits with 2k+ SVG downloads.</p>
+                            <div class="project-image">
+                                <img src="src/assets/project1-mock.png" alt="SVGL Project Screenshot" class="device-mockup">
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Preview</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>AdventJS - Programming Challenges</h3>
+                                <div class="project-tech-badges">
+                                    <span class="tech-badge typescript">
+                                        <i class="devicon-typescript-plain"></i> TypeScript
+                                    </span>
+                                    <span class="tech-badge react">
+                                        <i class="fab fa-react"></i> React
+                                    </span>
+                                </div>
+                            </div>
+                            <p>Interactive platform for JavaScript and TypeScript programming challenges. Achieved 1M+ monthly visits with 50k+ completed challenges. Built from scratch with modern web technologies.</p>
+                            <div class="project-image">
+                                <img src="src/assets/project2-mock.png" alt="AdventJS Project Screenshot" class="device-mockup">
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Preview</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>E-commerce Dashboard</h3>
+                                <div class="project-tech-badges">
+                                    <span class="tech-badge aws">
+                                        <i class="fab fa-aws"></i> AWS
+                                    </span>
+                                    <span class="tech-badge node">
+                                        <i class="fab fa-node-js"></i> Node.js
+                                    </span>
+                                </div>
+                            </div>
+                            <p>Full-stack e-commerce platform with real-time analytics, inventory management, and secure payment processing. Built with scalability in mind using AWS services.</p>
+                            <div class="project-image">
+                                <img src="src/assets/project3-mock.png" alt="E-commerce Dashboard Screenshot" class="device-mockup">
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="experience">
+                <div class="section-header">
+                    <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <span class="experience-company-logo">telecom</span>
+                        <div class="experience-content">
+                            <h3 class="experience-title">Software Developer</h3>
+                            <h4 class="experience-company">Canales Digitales</h4>
+                            <p class="experience-date">May 2022 - Present</p>
+                            <p class="experience-description">
+                                Frontend-oriented web application development specialist with expertise in:
+                                <ul class="experience-list">
+                                    <li>Web application development with frontend focus</li>
+                                    <li>Agile methodologies implementation</li>
+                                    <li>Technical profile with proficiency in agile tools</li>
+                                    <li>Quality software development practices</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <span class="experience-company-logo">telecom</span>
+                        <div class="experience-content">
+                            <h3 class="experience-title">Supervisor - Manager</h3>
+                            <h4 class="experience-company">Commercial Office Lanús</h4>
+                            <p class="experience-date">January 2021 - May 2022</p>
+                            <p class="experience-description">
+                                <ul class="experience-list">
+                                    <li>Analysis of various commercial KPIs (SAT/INSAT/NPS)</li>
+                                    <li>Development of soft skills for team management</li>
+                                    <li>Strategic planning and team leadership</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <span class="experience-company-logo">telecom</span>
+                        <div class="experience-content">
+                            <h3 class="experience-title">Assistant Supervisor - Team Leader</h3>
+                            <h4 class="experience-company">Commercial Offices - Avellaneda, Florida, Barrio Norte</h4>
+                            <p class="experience-date">January 2014 - September 2021</p>
+                            <p class="experience-description">
+                                <ul class="experience-list">
+                                    <li>Commercial KPIs analysis and optimization</li>
+                                    <li>Team management and leadership</li>
+                                    <li>Implementation of effective sales strategies</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <span class="experience-company-logo">telecom</span>
+                        <div class="experience-content">
+                            <h3 class="experience-title">Personalized Service Representative</h3>
+                            <h4 class="experience-company">Commercial Offices - Quilmes, Lomas de Zamora, Avellaneda</h4>
+                            <p class="experience-date">March 2008 - January 2014</p>
+                            <p class="experience-description">
+                                <ul class="experience-list">
+                                    <li>Customer service and support</li>
+                                    <li>Problem resolution</li>
+                                    <li>Commercial skills development</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <div class="section-header">
+                    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-feedback"></div>
+                    <div class="form-button">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Cristian Gonzalez. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Messages</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header>
+            <h1>Messages Admin Panel</h1>
+            <div id="error-message" class="error-message"></div>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search messages...">
+            </div>
+            <div class="filters">
+                <select id="filter-status">
+                    <option value="all">All Messages</option>
+                    <option value="unread">Unread</option>
+                    <option value="read">Read</option>
+                </select>
+                <input type="date" id="date-filter">
+            </div>
+            <div class="actions">
+                <button id="sync-btn">Sync Messages</button>
+                <button id="backup-btn">Create Backup</button>
+            </div>
+        </div>
+
+        <div class="stats-panel" id="stats">
+            <p>Total: 0</p>
+            <p>Read: 0</p>
+            <p>Unread: 0</p>
+        </div>
+
+        <div class="messages-container">
+            <div id="messages-list" class="messages-list">
+                <!-- Messages will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

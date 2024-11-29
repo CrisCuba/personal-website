@@ -1,0 +1,18 @@
+[
+  {
+    "name": "prueba",
+    "email": "prueba@prueba.com",
+    "message": "hola",
+    "id": 1732820250023,
+    "date": "2024-11-28T18:57:30.023Z",
+    "read": true
+  },
+  {
+    "name": "prueba recibir correo",
+    "email": "prueba@prueba.com",
+    "message": "hola cris",
+    "id": 1732831088792,
+    "date": "2024-11-28T21:58:08.792Z",
+    "read": true
+  }
+]
