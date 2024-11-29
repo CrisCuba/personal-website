@@ -327,62 +327,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const contactForm = document.querySelector('.contact-form');
+    // Contact form submission
+    const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        const formManager = new FormManager(contactForm);
-
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            formManager.disableForm(true);
-
-            const formData = {
-                name: contactForm.querySelector('[name="name"]').value.trim(),
-                email: contactForm.querySelector('[name="email"]').value.trim(),
-                message: contactForm.querySelector('[name="message"]').value.trim()
-            };
-
-            // Validate form data
-            if (!formData.name || !formData.email || !formData.message) {
-                formManager.showFeedback('Please fill in all fields', 'error');
-                formManager.disableForm(false);
-                return;
-            }
-
-            try {
-                // First try to save to server
-                const response = await fetch('http://localhost:3000/api/messages', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData)
-                });
-
-                if (!response.ok) {
-                    const errorData = await response.json();
-                    throw new Error(errorData.error || 'Server error');
-                }
-
-                const serverMessage = await response.json();
-                console.log('Message saved to server:', serverMessage);
-
-                // Then save to IndexedDB with the server-generated ID
-                await contactDB.saveMessage({
-                    ...formData,
-                    id: serverMessage.id,
-                    date: serverMessage.date,
-                    read: serverMessage.read
-                });
-                console.log('Message saved to IndexedDB');
-
-                formManager.notification.show('Message sent successfully!', 'success');
-                await formManager.resetForm();
-            } catch (error) {
-                console.error('Error saving message:', error);
-                formManager.notification.show(error.message || 'Error sending message. Please try again.', 'error');
-            } finally {
-                formManager.disableForm(false);
-            }
+            
+            const formData = new FormData(contactForm);
+            const formProps = Object.fromEntries(formData);
+            
+            // For now, we'll just show a success message without sending to backend
+            alert('Thank you for your message! This is a demo version, so the message was not actually sent.');
+            contactForm.reset();
         });
     }
 
