@@ -44,7 +44,7 @@ body {
 /* Navigation */
 header {
     position: fixed;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
     padding: 0 1rem;
     width: 50%;
